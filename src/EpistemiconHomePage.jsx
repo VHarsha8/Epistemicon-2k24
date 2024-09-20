@@ -6,13 +6,10 @@ function EpistemiconHomePage() {
             className="flex relative overflow-hidden my-6 flex-col items-center justify-center w-full px-6 md:gap-0 gap-4 mx-auto h-[650px] md:h-screen "
         >
 
-            <div className=' absolute md:w-[500px] md:h-[500px] w-[300px] h-[300px] rounded-full md:-top-[50%] -top-[20%] -left-[40%] md:-left-[10px] bg-oliurblue'></div>
-            <div className=' absolute md:w-[500px] md:h-[500px] w-[300px] h-[300px] rounded-full md:-bottom-[50%] -bottom-[20%] -right-[40%] md:-right-[10px] bg-oliurblue'>
-
-            </div>
+            
             <div className="flex items-center justify-center mb-1">
                 <h1 className="px-3 py-1 text-sm text-center text-gray-500 border border-gray-400 rounded-full md:text-md backdrop-filter backdrop-blur-xl bg-green-400/30 font-poppins">
-                    SEP-28-2024
+                    Welcome to
                 </h1>
             </div>
 
@@ -31,7 +28,7 @@ function EpistemiconHomePage() {
                 </h1>
             </div>
 
-            <a href="#">
+            {/* <a href="#">
                 <div className="flex gap-4 p-4 mt-4 rounded-full backdrop-filter backdrop-blur-md border border-gray-900 justify-center items-center">
                     <img src="Playbutton.svg" className="w-8" alt="Play button" />
                     <div className="flex flex-col">
@@ -39,7 +36,15 @@ function EpistemiconHomePage() {
                         <h1 className="text-md font-mono -mt-[6px]">2:00</h1>
                     </div>
                 </div>
-            </a>
+            </a> */}
+           <a href='https://maps.app.goo.gl/J6xyoMU2tPoFzV7y7' target='_blank'><div className='flex flex-col justify-center mt-4 items-center pl-3 pr-2 py-2 bg-darkgreybackground'>
+               <h1 className='text-md font-poppins  text-white'>28 SEPT 2024</h1>
+               
+               <div className='flex  justify-center items-center'>
+               <h1 className='text-sm font-poppins   text-wrap text-white'>ALIET, Vijayawada</h1>
+                <img src='arrowright.svg'className='w-7  -rotate-45'/>
+               </div>
+          </div></a> 
         </div>
     );
 }
