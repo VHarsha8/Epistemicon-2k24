@@ -14,7 +14,7 @@ function EpistemiconHomePage() {
             </div>
 
             <div className="flex items-center justify-center">
-                <h1 className="font-medium text-[35px] md:text-[88px] text-center font-AmericanCaptainPatrius">
+                <h1 className="font-medium text-[35px] md:text-[88px] leading-tight md:leading-tight text-center font-AmericanCaptainPatrius">
                     EPISTEMICON - 2K24
                 </h1>
             </div>
