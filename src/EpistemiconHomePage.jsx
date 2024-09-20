@@ -3,9 +3,11 @@ import React from 'react';
 function EpistemiconHomePage() {
     return (
         <div
-            className="flex relative overflow-hidden my-6 flex-col items-center justify-center w-full px-6 md:gap-0 gap-4 mx-auto h-[650px] md:h-screen "
+            className="flex relative overflow-hidden my-6 flex-col items-center justify-center w-full px-6 md:gap-2 gap-4 mx-auto h-[650px] md:h-screen "
         >
-
+           <div
+  class="absolute -z-50 h-full opacity-50 w-full bg-white bg-[linear-gradient(to_right,#E5E4E2_1px,transparent_1px),linear-gradient(to_bottom,#E5E4E2_1px,transparent_1px)] bg-[size:24px_24px]"
+></div>
             
             <div className="flex items-center justify-center mb-1">
                 <h1 className="px-3 py-1 text-sm text-center text-gray-500 border border-gray-400 rounded-full md:text-md backdrop-filter backdrop-blur-xl bg-green-400/30 font-poppins">
@@ -14,17 +16,17 @@ function EpistemiconHomePage() {
             </div>
 
             <div className="flex items-center justify-center">
-                <h1 className="font-medium text-[35px] md:text-[88px] leading-tight md:leading-tight text-center font-AmericanCaptainPatrius">
+                <h1 className="font-medium text-[35px] md:text-[70px] leading-tight md:leading-tight text-center font-AmericanCaptainPatrius">
                     EPISTEMICON - 2K24
                 </h1>
             </div>
 
             <div className="flex flex-col items-center justify-center -mt-3">
-                <h1 className="text-sm text-center text-gray-500 md:text-lg font-poppins text-wrap">
+                <h1 className="text-sm text-center text-gray-500 md:text-lg  font-poppins text-wrap">
                     Organized by
                 </h1>
-                <h1 className="text-sm text-center text-gray-500 md:text-lg font-poppins text-wrap">
-                    Andhra Loyola Institute of Engineering and Technology, Vijayawada
+                <h1 className="text-sm text-center md:w-full w-3/4 text-gray-500 md:text-lg font-poppins text-wrap">
+                    Andhra Loyola Institute of Engineering and Technology. 
                 </h1>
             </div>
 
@@ -40,12 +42,12 @@ function EpistemiconHomePage() {
            <a href='https://maps.app.goo.gl/J6xyoMU2tPoFzV7y7' target='_blank'><div className='md:hidden   flex flex-col justify-center mt-4 items-center pl-11 pr-8 py-2 bg-darkgreybackground'>
                <h1 className='text-md font-poppins  text-white'>28 SEPT 2024</h1>
                
-               <div className='flex  justify-center items-center'>
-               <h1 className='text-sm font-poppins   text-wrap text-white'>ALIET, Vijayawada</h1>
+               <div className='flex  justify-center -mt-1 items-center'>
+               <h1 className='text-sm font-poppins   text-wrap text-white '>ALIET, Vijayawada</h1>
                 <img src='arrowright.svg'className='w-7  -rotate-45'/>
                </div>
           </div></a> 
-          {/* Mobile reference  */}
+          {/* Large screen reference  */}
            <a href='https://maps.app.goo.gl/J6xyoMU2tPoFzV7y7' target='_blank'><div className='hidden  md:flex xs:flex  justify-center mt-4 items-center pl-11 pr-8 py-2 bg-darkgreybackground'>
                <h1 className='text-md font-poppins  text-white'>28 SEPT 2024 </h1>
                <h1 className='text-md font-poppins px-1 text-white'> |</h1>
