@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed bg-pearl border border-b-gray-40  z-50 flex items-center justify-between w-full px-6 py-4   md:px-10">
-      <div className="flex items-center justify-center text-2xl tracking-wider md:text-3xl font-AmericanCaptainMdEY">
+      <div className="flex items-center justify-center text-2xl tracking-wider md:text-3xl font-goodtimes">
         EPISTEMICON
       </div>
 

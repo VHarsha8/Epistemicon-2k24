@@ -51,6 +51,7 @@ module.exports = {
         DubielItalic: ['DubielItalic', 'sans-serif'],
         MarvelRegularDj83: ['MarvelRegular-Dj83', 'sans-serif'],
         Vogue: ['Vogue', 'sans-serif'],
+        goodtimes: ['goodtimes', 'sans-serif'],
       },
     },
   },

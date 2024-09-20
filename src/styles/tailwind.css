@@ -55,6 +55,11 @@ body {
   src: url('./fonts/AmericanCaptainPatrius.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'goodtimes';
+  src: url('./fonts/goodtimes.otf') format('opentype');
+}
+
 
 
 .poster{

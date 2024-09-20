@@ -27,7 +27,7 @@ function Timer() {
   }, [targetDate]);
 
   return (
-    <div className="flex flex-col items-center justify-center p-2 md:p-4 bg-gray-100  rounded-full shadow-lg">
+    <div className="flex flex-col items-center border justify-center p-2 md:p-4 bg-gray-100  rounded-full shadow-lg">
       <div className="flex gap-2">
         <div className="flex flex-col items-center">
           <span className="md:text-xl text-md font-AmericanCaptainPatrius">{timeLeft.days} :</span>
