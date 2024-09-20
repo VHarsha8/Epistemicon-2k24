@@ -8,13 +8,13 @@ function Footer(){
             <div className="flex md:flex-row flex-col justify-between ">
                 <div className="flex  gap-4  md:gap-10">
                     <div className="flex  md:w-auto md:h-auto w-1/2 flex-col  ">
-                    <h1 className="font-poppins font-medium text-base md:text-md text-white"> About</h1>
+                    <h1 className="font-poppins  text-base md:text-md text-white"> About</h1>
                     <h1 className="font-poppins  text-gray-400 text-sm md:text-md"> Forum</h1>
                     <h1 className="font-poppins  text-gray-400 text-sm md:text-md"> About ALIET</h1>
 
                     </div>
                     <div className="flex md:w-auto md:h-auto w-1/2 flex-col ">
-                    <h1 className="font-poppins font-medium text-base md:text-md text-white"> Contact</h1>
+                    <h1 className="font-poppins  text-base md:text-md text-white"> Contact</h1>
                     <h1 className="font-poppins  text-gray-400 text-sm md:text-md"> Policy</h1>
                     <h1 className="font-poppins  text-gray-400 text-sm md:text-md"> Enquiry</h1>
 
