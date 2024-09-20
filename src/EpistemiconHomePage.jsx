@@ -1,4 +1,5 @@
 import React from 'react';
+import Timer from './Timer';
 import { motion } from 'framer-motion';
 
 function EpistemiconHomePage() {
@@ -30,8 +31,11 @@ function EpistemiconHomePage() {
 
     return (
         <div className="flex relative overflow-hidden my-6 flex-col items-center justify-center w-full px-8 md:gap-2 gap-4 mx-auto h-[650px] md:h-screen">
+            <div className='flex justify-center mb-4 items-center'>
+                <Timer />
+             </div>
             <div className="absolute -z-50 h-full opacity-50 w-full bg-white bg-[linear-gradient(to_right,#E5E4E2_1px,transparent_1px),linear-gradient(to_bottom,#E5E4E2_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-
+              
             <div className="flex items-center justify-center mb-1">
                 <h1 className="px-3 py-1 text-sm text-center text-gray-500 border border-gray-400 rounded-full md:text-md backdrop-filter backdrop-blur-xl bg-green-400/30 font-poppins">
                     Welcome to
