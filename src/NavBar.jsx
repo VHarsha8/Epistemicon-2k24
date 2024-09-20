@@ -36,7 +36,7 @@ const Navbar = () => {
 
       {/* Dropdown Menu for small screens */}
       <div className={`absolute top-16 left-0 w-full bg-white p-6 z-10 flex flex-col space-y-4 items-center transform transition-transform duration-300 md:hidden ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
-        <h1 className="text-xl font-medium font-mono">Venue</h1>
+        <h1 className="text-xl font-medium font-mono">Event Scheduler</h1>
         <a href="#" className="flex items-center justify-center px-3 py-2 font-medium text-white bg-black rounded-lg font-poppins">
           Learn More
         </a>
