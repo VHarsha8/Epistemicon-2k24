@@ -68,14 +68,14 @@ function EpistemiconHomePage() {
                </div>
           </div></a> 
           {/* Large screen reference  */}
-           <a href='https://maps.app.goo.gl/J6xyoMU2tPoFzV7y7' target='_blank'><div className='hidden  md:flex xs:flex  justify-center mt-4 items-center pl-11 pr-8 py-2 bg-darkgreybackground'>
+           <a href='https://maps.app.goo.gl/J6xyoMU2tPoFzV7y7' target='_blank'rel="noreferrer"><div className='hidden  md:flex xs:flex  justify-center mt-4 items-center pl-11 pr-8 py-2 bg-darkgreybackground'>
                <h1 className='text-md font-poppins  text-white'>28 SEPT 2024 </h1>
                <h1 className='text-md font-poppins px-1 text-white'> |</h1>
 
                
                <div className='flex  justify-center items-center'>
                <h1 className='text-sm font-poppins   text-wrap text-white'> ALIET, Vijayawada</h1>
-                <img src='arrowright.svg'className='w-7  -rotate-45'/>
+                <img src='arrowright.svg' alt="Description of image"className='w-7  -rotate-45'/>
                </div>
           </div></a> 
 

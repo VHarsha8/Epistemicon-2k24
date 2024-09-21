@@ -5,26 +5,19 @@ import { gsap } from 'gsap';
 
 function Epistemicon() {
     const slides = [
-        {
-            url: 'EPISTEMICONPOSTER.jpg'
-        },
-        {
-            url: 'QUIZPOSTER.jpg'
-        },
-        
-        
+        { url: 'EPISTEMICONPOSTER.jpg' },
+        { url: 'QUIZPOSTER.jpg' },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const slideRef = useRef(null);
 
-    
     const animateSlide = (newIndex) => {
         gsap.to(slideRef.current, {
-            x: -newIndex * 100 + '%', 
-            duration: 0.3, 
-            ease: "power3.inOut", 
-            snap: { x: 1 }, 
+            x: -newIndex * 100 + '%',
+            duration: 0.3,
+            ease: "power3.inOut",
+            snap: { x: 1 },
         });
     };
 
@@ -47,18 +40,20 @@ function Epistemicon() {
         animateSlide(slideIndex);
     };
 
-    
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
-        }, 5000); 
+        }, 5000);
 
-        return () => clearInterval(interval); 
+        return () => clearInterval(interval);
+    }, []); // Empty dependency array to run only on mount/unmount
+
+    useEffect(() => {
+        animateSlide(currentIndex); // Animate the current slide on index change
     }, [currentIndex]);
 
     return (
-        <div className='md:max-w-[1400px]  h-[400px] md:h-[680px] w-full m-auto  relative group pb-16 px-4 overflow-hidden'>
-            {/* Slide container with snapping */}
+        <div className='md:max-w-[1400px] h-[400px] md:h-[680px] w-full m-auto relative group pb-16 px-4 overflow-hidden'>
             <div
                 ref={slideRef}
                 className='flex w-full h-full transition-all duration-700 ease-in-out transform'
@@ -72,7 +67,6 @@ function Epistemicon() {
                 ))}
             </div>
 
-            {/* Left Arrow */}
             <div
                 className='absolute hidden group-hover:block top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 cursor-pointer text-white'
                 onClick={prevSlide}
@@ -80,7 +74,6 @@ function Epistemicon() {
                 <BsChevronCompactLeft size={30} />
             </div>
 
-            {/* Right Arrow */}
             <div
                 className='absolute hidden group-hover:block top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 cursor-pointer text-white'
                 onClick={nextSlide}
@@ -88,7 +81,6 @@ function Epistemicon() {
                 <BsChevronCompactRight size={30} />
             </div>
 
-            {/* Slide indicators */}
             <div className='flex justify-center py-2'>
                 {slides.map((slide, slideIndex) => (
                     <div
