@@ -2,11 +2,11 @@ function Footer(){
     return(
         <div className="bg-darkgreybackground h-auto w-full p-10 md:p-16   flex flex-col  ">
 
-            <div className="container mx-auto flex flex-col ">
+            <div className="container  mx-auto flex flex-col ">
                 <img src="alietlogo.png" className="w-16"/>
-            <h1 className="font-Vogue text-white text-3xl text-left md:text-4xl font-medium py-6 md:py-10">Epistemicon - 2K24</h1>
-            <div className="flex md:flex-row flex-col justify-between ">
-                <div className="flex  gap-4  md:gap-10">
+            <h1 className="font-Vogue text-white text-3xl text-left md:text-4xl font-medium py-6 md:py-5">Epistemicon - 2K24</h1>
+            <div className="flex md:flex-row flex-col justify-between items-center ">
+                <div className="flex   gap-4  md:gap-10">
                     <div className="flex  md:w-auto md:h-auto w-1/2 flex-col  ">
                     <h1 className="font-poppins  text-base md:text-md text-white"> About</h1>
                     <h1 className="font-poppins  text-gray-400 text-sm md:text-md"> Forum</h1>
@@ -15,8 +15,8 @@ function Footer(){
                     </div>
                     <div className="flex md:w-auto md:h-auto w-1/2 flex-col ">
                     <h1 className="font-poppins  text-base md:text-md text-white"> Contact</h1>
-                    <h1 className="font-poppins  text-gray-400 text-sm md:text-md"> Policy</h1>
-                    <h1 className="font-poppins  text-gray-400 text-sm md:text-md"> Enquiry</h1>
+                    <h1 className="font-poppins  text-gray-400 text-sm md:text-md"> e-mail</h1>
+                    <h1 className="font-poppins  text-gray-400 text-sm md:text-md"> Developers</h1>
 
                     </div>
                 </div>
