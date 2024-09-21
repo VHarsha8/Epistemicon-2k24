@@ -231,25 +231,35 @@ const eventData = {
 };
 
 
+// Middleware to parse incoming requests with JSON payloads
+app.use(express.json());
+
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, '..', 'build')));
 
 // API route to fetch event data based on department
-app.get('/api/events/:department', (req, res) => {
-  const department = req.params.department.toUpperCase();
-  const data = eventData[department] || [];
-  console.log(data);
-  res.json(data);
+// API route to fetch event data based on department
+app.get('/api/events', (req, res) => {
+  const { department } = req.query;
+
+  // Set default department to CSE if not provided
+  const upperDepartment = department ? department.toUpperCase() : 'CSE';
+  const data = eventData[upperDepartment];
+
+  if (!data) {
+    return res.status(404).json({ error: 'Department not found' });
+  }
+
+  res.status(200).json(data);
 });
 
-// Catch-all route to serve React app
+
+// Default route to serve the React app (fallback for unknown routes)
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../build', 'index.html'));
+  res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
 });
 
+// Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
-
-//Final data

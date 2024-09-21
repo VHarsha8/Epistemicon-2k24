@@ -4,10 +4,20 @@ function CseTabs({ selectedDepartment }) {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        fetch(`/api/events/${selectedDepartment}`)
-            .then(res => res.json())
-            .then(data => setEvents(data))
-            .catch(err => console.error(err));
+        const fetchEvents = async () => {
+            try {
+                const response = await fetch(`/api/events?department=${selectedDepartment}`);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch events');
+                }
+                const data = await response.json();
+                setEvents(data);
+            } catch (error) {
+                console.error('Error fetching events:', error);
+            }
+        };
+
+        fetchEvents();
     }, [selectedDepartment]);
 
     return (
