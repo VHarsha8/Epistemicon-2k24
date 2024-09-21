@@ -245,6 +245,7 @@ app.get('/api/events', (req, res) => {
   // Set default department to CSE if not provided
   const upperDepartment = department ? department.toUpperCase() : 'CSE';
   const data = eventData[upperDepartment];
+  console.log(data);
 
   if (!data) {
     return res.status(404).json({ error: 'Department not found' });
