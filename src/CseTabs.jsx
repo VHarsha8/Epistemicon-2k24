@@ -4,10 +4,13 @@ function CseTabs({ selectedDepartment }) {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
+        console.log('Selected Department:', selectedDepartment);
         const fetchEvents = async () => {
             try {
                 const response = await fetch(`/api/events?department=${selectedDepartment}`);
                 if (!response.ok) {
+                    const errorData = await response.json();
+                    console.error('Error fetching events:', errorData);
                     throw new Error('Failed to fetch events');
                 }
                 const data = await response.json();
