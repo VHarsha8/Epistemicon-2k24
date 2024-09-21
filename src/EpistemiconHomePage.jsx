@@ -64,7 +64,7 @@ function EpistemiconHomePage() {
                
                <div className='flex  justify-center -mt-1 items-center'>
                <h1 className='text-sm font-poppins   text-wrap text-white '>ALIET, Vijayawada</h1>
-                <img src='arrowright.svg'className='w-7  -rotate-45'/>
+                <img src='arrowright.svg'alt ="Arrow"className='w-7  -rotate-45'/>
                </div>
           </div></a> 
           {/* Large screen reference  */}
@@ -75,7 +75,7 @@ function EpistemiconHomePage() {
                
                <div className='flex  justify-center items-center'>
                <h1 className='text-sm font-poppins   text-wrap text-white'> ALIET, Vijayawada</h1>
-                <img src='arrowright.svg' alt="Description of image"className='w-7  -rotate-45'/>
+                <img src='arrowright.svg' alt="arrow"className='w-7  -rotate-45'/>
                </div>
           </div></a> 
 

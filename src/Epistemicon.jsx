@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import { gsap } from 'gsap';
@@ -28,12 +28,12 @@ function Epistemicon() {
         animateSlide(newIndex);
     };
 
-    const nextSlide = () => {
+    const nextSlide = useCallback(() => {
         const isLastSlide = currentIndex === slides.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
         animateSlide(newIndex);
-    };
+    }, [currentIndex, slides.length]);
 
     const goToSlide = (slideIndex) => {
         setCurrentIndex(slideIndex);
@@ -46,7 +46,7 @@ function Epistemicon() {
         }, 5000);
 
         return () => clearInterval(interval);
-    }, []); // Empty dependency array to run only on mount/unmount
+    }, [nextSlide]); // Now including nextSlide
 
     useEffect(() => {
         animateSlide(currentIndex); // Animate the current slide on index change
