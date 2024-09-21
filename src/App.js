@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import EpistemiconHomePage from './EpistemiconHomePage';
 import Footer from './footer';
 import Tabs from './Tabs';
-import AboutComponent from './AboutComponent';
 import CseTabs from './CseTabs';
 import Navbar from './NavBar';
 import Epistemicon from './Epistemicon';
@@ -20,7 +19,6 @@ function App() {
 
             <Navbar />
             <EpistemiconHomePage />
-            <AboutComponent/>
 
             <Epistemicon />
             <Tabs setSelectedDepartment={setSelectedDepartment} />
