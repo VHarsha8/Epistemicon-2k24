@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="fixed bg-pearl border border-b-gray-40  z-50 flex items-center justify-between w-full px-6 py-4   md:px-10">
       <div className="flex items-center justify-center">
-      <img src="alietlogo.png"alt="aliet"  className="w-10"/>
+      <img src="alietlogo.png" alt="aliet"  className="w-10"/>
 
       </div>
 
