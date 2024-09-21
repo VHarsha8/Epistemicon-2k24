@@ -1,37 +1,20 @@
 {
     "version": 2,
     "builds": [
-      {
-        "src": "api/server.js",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "src/**/*",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "build"
+        {
+            "src": "api/server.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "src/**/*",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "build"
+            }
         }
-      }
     ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/api/server.js"
-      },
-      {
-        "handle": "filesystem"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/src/index.html"
-      }
-    ],
-    
-        "rewrites": [
-          { "source": "/api/events", "destination": "/api/server.js" },
-          { "source": "/(.*)", "destination": "/api/catchAll.js" }
-        ]
-      
-      
-  }
-  
+    "rewrites": [
+        { "source": "/api/events/(.*)", "destination": "/api/server.js" },
+        { "source": "/(.*)", "destination": "/src/index.html" }
+    ]
+}
