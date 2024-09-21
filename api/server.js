@@ -238,15 +238,15 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '..', 'build')));
 
 // API route to fetch event data based on department
-// API route to fetch event data based on department
 app.get('/api/events', (req, res) => {
   const { department } = req.query;
 
   // Set default department to CSE if not provided
   const upperDepartment = department ? department.toUpperCase() : 'CSE';
   const data = eventData[upperDepartment];
-  console.log(data);
 
+  console.log(`Fetching events for department: ${upperDepartment}`);
+  
   if (!data) {
     return res.status(404).json({ error: 'Department not found' });
   }
