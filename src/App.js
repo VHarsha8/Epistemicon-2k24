@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import EpistemiconHomePage from './EpistemiconHomePage';
 import Footer from './footer';
 import Tabs from './Tabs';
+
 import CseTabs from './CseTabs';
 import Navbar from './NavBar';
 import Epistemicon from './Epistemicon';
